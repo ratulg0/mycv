@@ -3,9 +3,8 @@
   --primary: #00B87B;
   --secondary: #314355;
   --light: #F2F2F2;
-  --dark: #1986f3;
+  --dark: #2C3E50;
 }
-
 
 @media (max-width: 991.98px) {
   .sticky-lg-top.vh-100 {
