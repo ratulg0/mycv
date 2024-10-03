@@ -3,67 +3,9 @@
   --primary: #00B87B;
   --secondary: #314355;
   --light: #F2F2F2;
-  --dark: #2C3E50;
+  --dark: #1986f3;
 }
 
-header {
-  background-color: #2C3E50; /* Purple */
-  color: #fff;
-  padding: 20px;
-  text-align: left;
-  position: relative;
-}
-
-header h1 {
-  margin: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-nav ul li a {
-  color:  #00B87B;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li:hover {
-  transform: scale(1.1);
-}
-
-nav ul li a:hover {
-  color: #ffffff;
-}
-
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity .5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
 
 @media (max-width: 991.98px) {
   .sticky-lg-top.vh-100 {
