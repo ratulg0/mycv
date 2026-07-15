@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 70px;
+}
+
 body {
   background: linear-gradient(135deg, #000050 0%, #000080 50%, #00005a 100%);
   background-attachment: fixed;
