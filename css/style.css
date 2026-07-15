@@ -1,9 +1,19 @@
 /********** Template CSS **********/
 :root {
-  --primary: #00B87B;
-  --secondary: #314355;
-  --light: #F2F2F2;
-  --dark: #2C3E50;
+  --primary: #FF4FA7;
+  --secondary: rgba(0, 0, 80, 0.75);
+  --light: #FFFFFF;
+  --dark: #000050;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #000050 0%, #000080 50%, #00005a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 @media (max-width: 991.98px) {
@@ -23,6 +33,12 @@
 .btn-square {
   width: 40px;
   height: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-square:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(255, 79, 167, 0.6);
 }
 
 .btn-sm-square {
@@ -63,7 +79,7 @@
   font-size: 30px;
   right: 30px;
   bottom: 30px;
-  transition: background 0.5s;
+  transition: all 0.3s ease;
   z-index: 11;
 }
 
@@ -111,7 +127,7 @@
   height: 10px;
   bottom: -4px;
   left: 0;
-  border: 2px solid var(--light);
+  border: 2px solid var(--primary);
   border-radius: 10px;
 }
 
@@ -123,22 +139,34 @@
   bottom: 0;
   left: 15px;
   border-radius: 2px;
-  background: var(--light);
+  background: var(--primary);
 }
 
 .progress {
-  height: 5px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.1);
 }
 
 .progress .progress-bar {
   width: 0px;
-  transition: 2s;
+  transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 3px;
 }
 
 .service-item {
   padding: 30px;
   text-align: center;
   background: var(--secondary);
+  border: 1px solid rgba(255, 79, 167, 0.15);
+  transition: all 0.35s ease;
+  backdrop-filter: blur(8px);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 79, 167, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 79, 167, 0.2);
 }
 
 .service-item i {
@@ -147,14 +175,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--light);
+  background: rgba(255, 79, 167, 0.15);
   color: var(--primary);
-  transition: .5s;
+  transition: all 0.35s ease;
+  border-radius: 50%;
 }
 
 .service-item:hover i {
   background: var(--primary);
-  color: var(--light);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 79, 167, 0.5);
 }
 
 .portfolio-item .portfolio-btn {
@@ -164,9 +194,9 @@
   top: 50%;
   left: 50%;
   font-size: 90px;
-  background: rgba(44, 62, 80, .9);
+  background: rgba(0, 0, 80, 0.88);
   opacity: 0;
-  transition: .5s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-btn {
@@ -202,4 +232,76 @@
 
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
+}
+
+/* Sidebar glass effect */
+.sticky-lg-top .d-flex.flex-column {
+  background: rgba(0, 0, 80, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 79, 167, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Section fade-in smoothness */
+section {
+  transition: opacity 0.4s ease;
+}
+
+/* Skill label glow on primary */
+.skill p.mb-2:first-child {
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+/* Experience timeline arrow glow */
+.bi-arrow-right.text-light {
+  color: var(--primary) !important;
+  filter: drop-shadow(0 0 4px rgba(255, 79, 167, 0.7));
+}
+
+/* Counter stat cards */
+.d-flex.bg-secondary.p-4 {
+  border: 1px solid rgba(255, 79, 167, 0.2);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.d-flex.bg-secondary.p-4:hover {
+  border-color: rgba(255, 79, 167, 0.5);
+  box-shadow: 0 4px 20px rgba(255, 79, 167, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Neon glow on primary text */
+.text-primary {
+  text-shadow: 0 0 8px rgba(255, 79, 167, 0.4);
+}
+
+/* Smooth button transitions */
+.btn {
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 16px rgba(255, 79, 167, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Portfolio image hover zoom */
+.portfolio-item img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Form inputs */
+.form-control, .form-floating textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 79, 167, 0.25) !important;
+  border-color: rgba(255, 79, 167, 0.5) !important;
 }
