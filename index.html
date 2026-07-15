@@ -31,7 +31,38 @@
 
     <body>
 
-        <div class="container">
+        <!-- Navbar Start -->
+        <nav class="navbar-custom wow fadeInDown" data-wow-delay="0.1s">
+            <div class="navbar-inner">
+                <a class="navbar-brand-custom" href="#about">RG<span class="text-primary">.</span></a>
+                <ul class="navbar-nav-custom">
+                    <li><a href="#about" class="nav-link-custom">About</a></li>
+                    <li><a href="#experience" class="nav-link-custom">Experience</a></li>
+                    <li><a href="#education" class="nav-link-custom">Education</a></li>
+                    <li><a href="#skills" class="nav-link-custom">Skills</a></li>
+                    <li><a href="#services" class="nav-link-custom">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link-custom">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link-custom">Contact</a></li>
+                    <li><a href="https://github.com/ratulg0" target="_blank" class="nav-link-custom nav-cta"><i class="fab fa-github me-1"></i>GitHub</a></li>
+                </ul>
+                <button class="navbar-toggler-custom" id="navToggler" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <ul class="navbar-mobile" id="navMobile">
+                <li><a href="#about" class="nav-link-custom">About</a></li>
+                <li><a href="#experience" class="nav-link-custom">Experience</a></li>
+                <li><a href="#education" class="nav-link-custom">Education</a></li>
+                <li><a href="#skills" class="nav-link-custom">Skills</a></li>
+                <li><a href="#services" class="nav-link-custom">Services</a></li>
+                <li><a href="#portfolio" class="nav-link-custom">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link-custom">Contact</a></li>
+                <li><a href="https://github.com/ratulg0" target="_blank" class="nav-link-custom">GitHub</a></li>
+            </ul>
+        </nav>
+        <!-- Navbar End -->
+
+        <div class="container" style="padding-top: 70px;">
             <div class="row g-5">
                 <div class="col-lg-4 sticky-lg-top vh-100">
                     <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
@@ -48,7 +79,7 @@
                             <a class="btn btn-secondary btn-square mx-1" href="https://ratulgaur.netlify.app/"><i class="fas fa-globe"></i></a>
                         </div>
                         <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="https://github.com/ratulg0/mycv" class="btn w-50 border-end">Download CV</a>
+                            <a href="Ratul_Gaur_Resume.pdf" download="Ratul_Gaur_Resume.pdf" class="btn w-50 border-end">Download CV</a>
                             <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
                         </div>
                     </div>
@@ -113,58 +144,154 @@
                     </section>
                     <!-- About End -->
 
-                    <!-- Expericence Start -->
-                    <section id="experience" class="py-5 border-bottom experience wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- Experience Start -->
+                    <section id="experience" class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="title pb-3 mb-5">Experience</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-5">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Associate Software Engineer <span style="color:rgba(255,255,255,0.5);font-weight:400;">&mdash; ASP .NET Developer</span></h5>
-                                <p class="mb-3">Logic Decipher Pvt Ltd &nbsp;<span class="badge" style="background:rgba(255,79,167,0.15);color:#FF4FA7;border:1px solid rgba(255,79,167,0.35);font-weight:400;">September 2024 &ndash; Present &bull; Remote (India)</span></p>
-                                <p class="mb-3">Developing and maintaining enterprise-grade software solutions across multiple product lines using Blazor, ASP.NET Core, and C#. Contributed to the full software development lifecycle — from architecture design and feature development to deployment and post-release monitoring — within a remote Agile team.</p>
-                                <p class="mb-2" style="color:#FF4FA7;font-size:0.85rem;font-weight:600;letter-spacing:0.05em;">KEY PROJECTS &amp; CONTRIBUTIONS</p>
-                                <div class="mb-3 ps-3" style="border-left:2px solid rgba(255,79,167,0.25);">
-                                    <p class="mb-1 fw-medium">VSTO Office Add-ins <span style="color:rgba(255,255,255,0.4);font-weight:400;font-size:0.85rem;">— C#, VSTO, .NET Framework, Office Interop</span></p>
-                                    <p class="mb-0" style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Engineered Visual Studio Tools for Office (VSTO) add-ins for Word and Excel, enabling deep integration with enterprise document workflows. Implemented ribbon customisations, task panes, and event-driven automation to streamline repetitive document processing tasks, reducing manual effort significantly across business units.</p>
-                                </div>
-                                <div class="mb-3 ps-3" style="border-left:2px solid rgba(255,79,167,0.25);">
-                                    <p class="mb-1 fw-medium">Azure Function Apps <span style="color:rgba(255,255,255,0.4);font-weight:400;font-size:0.85rem;">— C#, Azure Functions, Azure Service Bus, Azure Storage</span></p>
-                                    <p class="mb-0" style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Designed and deployed serverless Azure Function Apps to handle event-driven background processing, scheduled jobs, and inter-service communication via Azure Service Bus. Integrated with Azure Blob Storage and SQL Server to support scalable, decoupled microservice architectures with built-in retry and exception handling policies.</p>
-                                </div>
-                                <div class="mb-3 ps-3" style="border-left:2px solid rgba(255,79,167,0.25);">
-                                    <p class="mb-1 fw-medium">Fulcrum Applications <span style="color:rgba(255,255,255,0.4);font-weight:400;font-size:0.85rem;">— Blazor, .NET Core, MudBlazor, REST APIs, Entity Framework</span></p>
-                                    <p class="mb-0" style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Built and extended Fulcrum-based web applications serving as the operational backbone for business process management. Developed modular Blazor components, implemented complex multi-stage workflow logic in C#, and integrated with third-party REST APIs to automate data exchange and approval pipelines across departments.</p>
-                                </div>
-                                <div class="mb-3 ps-3" style="border-left:2px solid rgba(255,79,167,0.25);">
-                                    <p class="mb-1 fw-medium">DB Scanner Application <span style="color:rgba(255,255,255,0.4);font-weight:400;font-size:0.85rem;">— C#, .NET Core, SQL Server, MSSMS, Entity Framework</span></p>
-                                    <p class="mb-0" style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Developed an internal database scanning and auditing tool that programmatically inspects SQL Server schemas, identifies data anomalies, orphaned records, and schema drift across environments. The tool generates structured diagnostic reports, enabling the team to proactively resolve data integrity issues before they impact production systems.</p>
-                                </div>
-                                <div class="mb-3 ps-3" style="border-left:2px solid rgba(255,79,167,0.25);">
-                                    <p class="mb-1 fw-medium">Modular Web Application <span style="color:rgba(255,255,255,0.4);font-weight:400;font-size:0.85rem;">— Blazor, ASP.NET Core, MudBlazor, Azure APIM, Application Insights</span></p>
-                                    <p class="mb-0" style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Architected and developed a large-scale modular web application following clean architecture principles, with clearly separated feature modules, shared component libraries, and centralised configuration. Integrated Azure APIM for API gateway management, Application Insights for telemetry-based logging, and Azure DevOps pipelines for automated CI/CD deployments — reducing unhandled exceptions by 63% across microservices.</p>
+                        <div class="row g-4">
+
+                            <!-- Card 1 -->
+                            <div class="col-12">
+                                <div class="exp-card" id="exp1">
+                                    <div class="exp-card-header" onclick="toggleExp('exp1')">
+                                        <div class="exp-card-left">
+                                            <div class="exp-icon"><i class="fa fa-briefcase"></i></div>
+                                            <div>
+                                                <h5 class="mb-0">Associate Software Engineer <span class="exp-tech">.NET Core Developer</span></h5>
+                                                <p class="mb-1 exp-company"><i class="fa fa-building me-1"></i>Logic Decipher Pvt Ltd &nbsp;<span class="exp-badge">Sep 2024 &ndash; Present &bull; Remote (India)</span></p>
+                                                <p class="mb-0 exp-summary">Building enterprise Blazor &amp; .NET Core applications, Azure Function Apps, VSTO add-ins, and modular web solutions with CI/CD pipelines and Azure cloud services.</p>
+                                            </div>
+                                        </div>
+                                        <div class="exp-toggle"><i class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                    <div class="exp-card-body">
+                                        <p class="mb-3">Developing and maintaining enterprise-grade software solutions across multiple product lines using Blazor, .NET Core, and C#. Contributed to the full software development lifecycle — from architecture design and feature development to deployment and post-release monitoring — within a remote Agile team.</p>
+                                        <p class="exp-section-label">KEY PROJECTS &amp; CONTRIBUTIONS</p>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">VSTO Office Add-ins <span class="exp-stack">— C#, VSTO, .NET Framework, Office Interop</span></p>
+                                            <p class="mb-0">Engineered Visual Studio Tools for Office (VSTO) add-ins for Word and Excel, enabling deep integration with enterprise document workflows. Implemented ribbon customisations, task panes, and event-driven automation to streamline repetitive document processing tasks, reducing manual effort significantly across business units.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Azure Function Apps <span class="exp-stack">— C#, Azure Functions, Azure Service Bus, Azure Storage</span></p>
+                                            <p class="mb-0">Designed and deployed serverless Azure Function Apps to handle event-driven background processing, scheduled jobs, and inter-service communication via Azure Service Bus. Integrated with Azure Blob Storage and SQL Server to support scalable, decoupled microservice architectures with built-in retry and exception handling policies.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Fulcrum Applications <span class="exp-stack">— Blazor, .NET Core, MudBlazor, REST APIs, Entity Framework</span></p>
+                                            <p class="mb-0">Built and extended Fulcrum-based web applications serving as the operational backbone for business process management. Developed modular Blazor components, implemented complex multi-stage workflow logic in C#, and integrated with third-party REST APIs to automate data exchange and approval pipelines across departments.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">DB Scanner Application <span class="exp-stack">— C#, .NET Core, SQL Server, MSSMS, Entity Framework</span></p>
+                                            <p class="mb-0">Developed an internal database scanning and auditing tool that programmatically inspects SQL Server schemas, identifies data anomalies, orphaned records, and schema drift across environments. Generates structured diagnostic reports enabling the team to proactively resolve data integrity issues before they impact production systems.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Modular Web Application <span class="exp-stack">— Blazor, ASP.NET Core, MudBlazor, Azure APIM, Application Insights</span></p>
+                                            <p class="mb-0">Architected a large-scale modular web application following clean architecture principles with separated feature modules and shared component libraries. Integrated Azure APIM for API gateway management, Application Insights for telemetry logging, and Azure DevOps CI/CD pipelines — reducing unhandled exceptions by 63% across microservices.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Full Stack Intern</h5>
-                                <p class="mb-2">Excellence Technologies | <small>May 2024 - August 2024 &bull; Mohali (Punjab)</small></p>
-                                <p>Implemented new application features by designing schema models, constructing API endpoints with Express.js, and building functional interfaces with React.js. Built RESTful APIs and integrated them with frontend components. Implemented automated testing pipelines using Jest and Cypress. Collaborated in an Agile/Scrum environment with sprint planning, daily stand-ups, and code reviews.</p>
+
+                            <!-- Card 2 -->
+                            <div class="col-12">
+                                <div class="exp-card" id="exp2">
+                                    <div class="exp-card-header" onclick="toggleExp('exp2')">
+                                        <div class="exp-card-left">
+                                            <div class="exp-icon"><i class="fa fa-code"></i></div>
+                                            <div>
+                                                <h5 class="mb-0">Full Stack Intern</h5>
+                                                <p class="mb-1 exp-company"><i class="fa fa-building me-1"></i>Excellence Technologies &nbsp;<span class="exp-badge">May 2024 &ndash; Aug 2024 &bull; Mohali (Punjab)</span></p>
+                                                <p class="mb-0 exp-summary">Developed full-stack web features using React.js and Express.js, built RESTful APIs, implemented automated testing pipelines, and collaborated in an Agile/Scrum environment.</p>
+                                            </div>
+                                        </div>
+                                        <div class="exp-toggle"><i class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                    <div class="exp-card-body">
+                                        <p class="mb-3">Worked as a Full Stack Intern contributing to the design and development of client-facing web applications. Gained hands-on experience across the entire stack — from database schema design to frontend component development — in a professional Agile environment.</p>
+                                        <p class="exp-section-label">KEY CONTRIBUTIONS</p>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">API &amp; Backend Development <span class="exp-stack">— Node.js, Express.js, REST APIs, MySQL</span></p>
+                                            <p class="mb-0">Designed and implemented RESTful API endpoints using Express.js, including schema modelling, data validation, and error handling middleware. Integrated APIs with SQL databases and ensured consistent response structures across all services.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Frontend Development <span class="exp-stack">— React.js, HTML5, CSS3, Bootstrap</span></p>
+                                            <p class="mb-0">Built responsive and accessible UI components in React.js, consuming backend APIs to deliver dynamic user interfaces. Enhanced application UI/UX with responsive design patterns and optimised rendering performance across devices.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Automated Testing Pipelines <span class="exp-stack">— Jest, Cypress, Git, CI/CD</span></p>
+                                            <p class="mb-0">Implemented automated unit and end-to-end testing pipelines using Jest and Cypress, improving code reliability and accelerating feature deployment cycles. Participated in code reviews, sprint planning, and daily stand-ups within an Agile/Scrum workflow.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Intern</h5>
-                                <p class="mb-2">Stingfu Pvt Ltd | <small>October 2023 - April 2024 &bull; Mandi (H.P.)</small></p>
-                                <p>Extracted price data from active market sheets to aid in trading bot and algorithm development. Maintained and serviced systems used by the firm, provided support to the development team, and developed skills in Python and related technologies.</p>
+
+                            <!-- Card 3 -->
+                            <div class="col-12">
+                                <div class="exp-card" id="exp3">
+                                    <div class="exp-card-header" onclick="toggleExp('exp3')">
+                                        <div class="exp-card-left">
+                                            <div class="exp-icon"><i class="fa fa-chart-line"></i></div>
+                                            <div>
+                                                <h5 class="mb-0">Intern</h5>
+                                                <p class="mb-1 exp-company"><i class="fa fa-building me-1"></i>Stingfu Pvt Ltd &nbsp;<span class="exp-badge">Oct 2023 &ndash; Apr 2024 &bull; Mandi (H.P.)</span></p>
+                                                <p class="mb-0 exp-summary">Extracted and processed financial market data to support trading bot development, maintained firm systems, and developed Python scripting skills in a fintech environment.</p>
+                                            </div>
+                                        </div>
+                                        <div class="exp-toggle"><i class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                    <div class="exp-card-body">
+                                        <p class="mb-3">Contributed to a fintech firm's internal operations by working on data extraction, system maintenance, and algorithmic trading support. Developed practical skills in Python scripting and financial data processing within a fast-paced technical environment.</p>
+                                        <p class="exp-section-label">KEY CONTRIBUTIONS</p>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Market Data Extraction <span class="exp-stack">— Python, Pandas, Excel, Data Pipelines</span></p>
+                                            <p class="mb-0">Extracted and structured real-time and historical price data from active market sheets using Python and Pandas. Cleaned and transformed raw financial data into structured formats to feed into trading algorithms and analytical dashboards.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Trading Bot &amp; Algorithm Support <span class="exp-stack">— Python, Algorithm Design, Data Analysis</span></p>
+                                            <p class="mb-0">Assisted in the development and testing of automated trading bots and algorithmic strategies by providing clean, reliable data inputs. Collaborated with senior developers to validate algorithm outputs and identify edge cases in trading logic.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">System Maintenance &amp; Team Support <span class="exp-stack">— Linux, Python, Internal Tools</span></p>
+                                            <p class="mb-0">Maintained and serviced internal systems and tools used by the firm, ensuring operational continuity. Provided technical support to development team members and independently developed Python utilities to automate repetitive operational tasks.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Training Intern</h5>
-                                <p class="mb-2">CDAC | <small>October 2022 - January 2023 &bull; Mohali, India</small></p>
-                                <p>Applied Python programming to research AI methodologies through hands-on experimentation. Utilised OpenCV and Jupyter to construct computer vision workflows, and implemented machine learning algorithms across multiple projects.</p>
+
+                            <!-- Card 4 -->
+                            <div class="col-12">
+                                <div class="exp-card" id="exp4">
+                                    <div class="exp-card-header" onclick="toggleExp('exp4')">
+                                        <div class="exp-card-left">
+                                            <div class="exp-icon"><i class="fa fa-brain"></i></div>
+                                            <div>
+                                                <h5 class="mb-0">Training Intern</h5>
+                                                <p class="mb-1 exp-company"><i class="fa fa-building me-1"></i>CDAC &nbsp;<span class="exp-badge">Oct 2022 &ndash; Jan 2023 &bull; Mohali, India</span></p>
+                                                <p class="mb-0 exp-summary">Applied Python and AI/ML techniques through hands-on research, built computer vision workflows with OpenCV, and implemented machine learning algorithms across multiple training projects.</p>
+                                            </div>
+                                        </div>
+                                        <div class="exp-toggle"><i class="fa fa-chevron-down"></i></div>
+                                    </div>
+                                    <div class="exp-card-body">
+                                        <p class="mb-3">Completed an intensive AI/ML training internship at CDAC Mohali, one of India's premier advanced computing research centres. Gained foundational and applied experience in artificial intelligence, machine learning, and computer vision through structured research and project-based learning.</p>
+                                        <p class="exp-section-label">KEY CONTRIBUTIONS</p>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">AI Research &amp; Experimentation <span class="exp-stack">— Python, Jupyter Notebook, NumPy, Pandas</span></p>
+                                            <p class="mb-0">Applied Python programming to research and experiment with core artificial intelligence methodologies including supervised learning, classification, and regression. Documented findings and results in structured Jupyter notebooks for reproducibility and peer review.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Computer Vision Workflows <span class="exp-stack">— Python, OpenCV, Image Processing</span></p>
+                                            <p class="mb-0">Utilised OpenCV and Python to construct computer vision pipelines for image preprocessing, feature extraction, and object detection. Applied these workflows to prototype real-world use cases including facial recognition and motion detection systems.</p>
+                                        </div>
+                                        <div class="exp-project">
+                                            <p class="mb-1 fw-medium">Machine Learning Implementation <span class="exp-stack">— Python, Scikit-learn, TensorFlow (basic), Jupyter</span></p>
+                                            <p class="mb-0">Implemented and evaluated machine learning algorithms including decision trees, SVMs, and neural networks across multiple training projects. Performed data preprocessing, feature engineering, and model evaluation using standard ML libraries and metrics.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </section>
-                    <!-- Expericence End -->
+                    <!-- Experience End -->
 
                     <!-- Education Start -->
                     <section id="education" class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
@@ -564,14 +691,14 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 
-        <!-- Service card expand/collapse -->
+        <!-- Service card expand/collapse & Experience toggle -->
         <script>
+            // Service cards
             document.querySelectorAll('.service-expandable').forEach(function(card) {
                 card.addEventListener('click', function() {
                     var details = this.querySelector('.service-details');
                     var hint = this.querySelector('.service-toggle-hint');
                     var isOpen = this.classList.contains('expanded');
-                    // Close all others
                     document.querySelectorAll('.service-expandable').forEach(function(c) {
                         c.classList.remove('expanded');
                         c.querySelector('.service-details').style.display = 'none';
@@ -581,6 +708,57 @@
                         this.classList.add('expanded');
                         details.style.display = 'block';
                         hint.innerHTML = '<i class="fa fa-chevron-up me-1"></i>Hide details';
+                    }
+                });
+            });
+
+            // Experience cards
+            function toggleExp(id) {
+                var card = document.getElementById(id);
+                var body = card.querySelector('.exp-card-body');
+                var icon = card.querySelector('.exp-toggle i');
+                var isOpen = card.classList.contains('exp-open');
+                // Close all
+                document.querySelectorAll('.exp-card').forEach(function(c) {
+                    c.classList.remove('exp-open');
+                    c.querySelector('.exp-card-body').style.maxHeight = '0';
+                    c.querySelector('.exp-toggle i').className = 'fa fa-chevron-down';
+                });
+                if (!isOpen) {
+                    card.classList.add('exp-open');
+                    body.style.maxHeight = body.scrollHeight + 'px';
+                    icon.className = 'fa fa-chevron-up';
+                }
+            }
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                var nav = document.querySelector('.navbar-custom');
+                nav.classList.toggle('scrolled', window.scrollY > 30);
+            });
+
+            // Navbar mobile toggle
+            document.getElementById('navToggler').addEventListener('click', function() {
+                document.getElementById('navMobile').classList.toggle('open');
+                this.classList.toggle('open');
+            });
+
+            // Close mobile nav on link click
+            document.querySelectorAll('#navMobile .nav-link-custom').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    document.getElementById('navMobile').classList.remove('open');
+                    document.getElementById('navToggler').classList.remove('open');
+                });
+            });
+
+            // Active nav link on scroll
+            var sections = document.querySelectorAll('section[id]');
+            window.addEventListener('scroll', function() {
+                var scrollY = window.scrollY + 100;
+                sections.forEach(function(s) {
+                    if (scrollY >= s.offsetTop && scrollY < s.offsetTop + s.offsetHeight) {
+                        document.querySelectorAll('.nav-link-custom').forEach(function(l) { l.classList.remove('active'); });
+                        document.querySelectorAll('.nav-link-custom[href="#' + s.id + '"]').forEach(function(l) { l.classList.add('active'); });
                     }
                 });
             });
